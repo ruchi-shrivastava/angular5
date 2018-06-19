@@ -1,0 +1,8 @@
+
+<ul>
+    <li *ngFor="let car of itemlist; let  i = index">
+        {{ car }}
+       <!-- <input type="button" value="remove" (click)="removeCarItem(i,$event)">-->
+       <input type="button" value="Remove" (click)="remove(i)">
+    </li>
+</ul>

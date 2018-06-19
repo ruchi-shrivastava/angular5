@@ -1,0 +1,30 @@
+<div style="text-align: left">
+    <p><b>{{ intro }}</b></p>
+    
+    <label>Please enter some text</label><br><br>
+    <!--<input type="text" name=""  [value]= "inputValue"  placeholder="input any text here">-->
+    
+    <!--<textarea  [value]="inputValue" #inputRef></textarea><br><br>
+    <input type="button" value="ClickMe to show text box value" (click) = "clickHandler(inputRef)"> 
+     <p *ngIf = "showUserInput">
+         {{ userInput }}
+     </p>-->
+     <!--<textarea [value]="title"></textarea>-->
+    
+     <textarea [value]="inputValue" #inputRef></textarea><br><br>
+     <input type="button" value="click me to show text box value" (click)="clickHandler(inputRef)">
+     <p *ngIf = "showUserInput">
+         {{ userInput }}
+     </p>
+    
+     <br><br>
+    
+    <!--<app-list>[list]="carlist"></app-list>-->
+    
+    <app-list [list]="carList" (delete)="removeCarItem($event)"></app-list>
+
+    <app-yesno [response] = "yesNoResponse"></app-yesno>
+
+    
+   
+    </div>
